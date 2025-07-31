@@ -1,0 +1,291 @@
+ /*  */
+ .lightmood{
+    
+   
+
+   
+    /* gradient color  */
+    
+    
+    /*others color*/
+    --scrollbar-color: 	#9097a2;
+    --scrollbar-thump: 	#3a3e45;
+    --scrollbar-hover: 	#272a2f;
+   
+    
+ }
+ :root{
+     /* background color  */
+     --primary-color: #000000;
+     --primary-color: #f8fcfc;
+
+     --secondary-color: #0f0f0f;
+     --secondary-color: #ffffff;
+
+     --c1-color: #f0f0f01a;
+     --c1-color: #0c131b1a;
+
+     --sec-hover: #1a1a1a;
+     --sec-hover: ##F3F3F3;
+     
+     --head-color: #0c131b;
+     --head-color: #f0f0f0;
+
+     --p-txt-color:#f0f0f099;
+     --p-txt-color:#0c131b99;
+     
+     
+    
+    
+
+     
+     /* gradient color  */
+     
+     /* --gradient-1: linear-gradient(120deg, #7a93b826, #7a93b808);
+     --gradient-2: #7a93b81A;
+     --gradient-3: linear-gradient(360deg, #7a93b826, #7a93b81A); */
+
+     --linear-1: radial-gradient(circle at top, rgba(122, 118, 118, 0.986) 5%, #292727 50%);
+     --linear-1: radial-gradient(circle at top, rgba(122, 118, 118, 0.986) 5%, #000000 50%);
+     --linear-2 : linear-gradient( to top, rgb(19, 18, 18), rgba(0, 0, 0, 0.384));
+     --linear-2 : linear-gradient( to top, rgb(247, 241, 241), rgba(219, 214, 214, 0.329));
+     
+    
+     /*others color*/
+     --scrollbar-color: #263040;
+     --scrollbar-thump: #84b0f5;
+     --scrollbar-hover: #6f89b6;
+    
+     /* transition  */
+     --transition-1: 0.2s ease;
+     --transition-2: 0.3s ease;
+     --transition-3: 0.5s ease;
+     
+ 
+      /* fontsize  */
+      --font-h1: 2.25rem;
+      --font-h2: 1.5rem;
+      --font-h3: 1.375rem;
+      
+
+      --font-18: 1.125rem;
+      --font-16: 1rem;
+      --font-14: 0.875rem;
+
+
+
+
+      /* z-index  */
+      --z-minus:-1;
+      --z-zero:0;
+      --z-low:1;
+      --z-high:10;
+      --z-100:100;
+      --z-tooltop:1000;
+      --z-fix:1100;
+      --z-overlay:1110;
+      --z-modal:1990;
+      --z-max:9999;
+
+ 
+     }
+
+      /* ----------------------------------------
+       ============= reset css  ==============
+       -------------------------------------------*/
+     *,
+     *::after,
+     *::before{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+ 
+     }
+     li{
+         list-style: none;
+     }
+ 
+     a,
+     img,
+     input,
+     button,
+     i{
+         display: block;
+         text-transform: capitalize;
+     }
+     button{
+      background: none;
+      border: 0;
+      outline: 0;
+      cursor: pointer;
+      width: fit-content;
+     }
+     .btn{
+        max-width: 100%;
+        width: fit-content;
+       cursor: pointer;
+       text-align: center;
+       transition: 0.3s ease;
+        border-radius: 10px;
+        padding: 8px 25px;
+        margin: 10%;
+        text-transform: capitalize;
+        background: var(--linear-2);
+       
+        border: 1px solid transparent;
+
+     }
+    
+
+     a{
+         text-decoration: none;
+     }
+     img{
+         height: auto;
+         max-width: 100%;
+         object-fit: cover;
+     }
+    
+     html{
+         scroll-behavior: smooth;
+        
+     }
+     body{
+         max-width: 100%;
+         height: auto;
+         margin: 0 auto;
+         padding: 0 auto;
+         position: relative;
+         transition:  all 0.5s ease-in-out;
+         overflow-X: hidden; 
+         animation: fadeed 0.5s ease-in-out;
+        font-family: "Inter", sans-serif;
+        background: #fff;
+     }
+     
+
+      @keyframes fadeed {
+      from{transform: translateY(20px); opacity: 0;}
+      to{transform: translateY(0px); opacity: 1;}
+          
+      }
+       
+      h1{
+      font-size: var(--font-h1);
+      
+     }
+     h2{
+      font-size: var(--font-h2);
+     }
+     h3{
+      font-size: var(--font-h3);
+     }
+     /* h4{
+      font-size: var(--font-h4);
+     }
+     h5{
+      font-size: var(--font-h5);
+     } */
+     h1,h2,h3,h4,h5{
+      max-width: 100%;
+      font-family: "Inter", sans-serif;
+     }
+     .font-18{
+        font-size: var(--font-18);
+        line-height: 27px;
+     }
+     .font-16{
+        font-size: var(--font-16);
+        line-height: 25px;
+     }
+     .font-14{
+        font-size: var(--font-14);
+     }
+
+     
+ 
+     
+     
+    
+     
+ /* ============----page scroll bar-----============== */
+     ::-webkit-scrollbar { 
+         width: 5px; 
+         
+     }
+ 
+     ::-webkit-scrollbar-track { 
+         overflow: hidden;
+         background: transparent;
+
+        
+     }
+ 
+     ::-webkit-scrollbar-thumb {
+    
+     border-radius:100px;
+     background: var(--scrollbar-thump); 
+     transition: 0.3s;
+    
+   }
+   ::-webkit-scrollbar-thumb:hover{
+        opacity: 0.6;
+        background: var(--scrollbar-hover);
+  
+   }
+ 
+   @keyframes wiggle {
+        0%,
+        5%{
+            transform: rotateZ(0);
+
+        }
+        15%{
+            transform: rotateZ(-2deg);
+
+        }
+        20%{
+            transform: rotateZ(2deg);
+
+        }
+        25%{
+            transform: rotateZ(-2deg);
+
+        }
+        30%{
+            transform: rotateZ(1deg);
+
+        }
+        35%{
+            transform: rotateZ(-2deg);
+
+        }
+        40%,
+        100%{
+            transform: rotateZ(0);
+
+        }
+        
+     }
+ /* =====================cursor customizing=============== */
+ /* =====================ID section customizing=============== */
+ 
+ /* =====================others=========================== */
+    .container{
+     max-width: 100%;
+     padding: 0.5% 1% ;
+     margin: 0 2% ;
+     
+    }
+    section{
+     margin: 8% 5% 5%;
+     max-width: 100%;
+     position: relative;
+     transition: var(--transition-1);
+    }
+
+    /* <!-- =================================================
+    --------------Header start here------------------
+    =================================================   --> */
+
+ 
