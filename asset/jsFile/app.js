@@ -24,3 +24,31 @@ closeMenu.addEventListener("click", () => {
     closeMenu.style.display = "none";
      navigation.style.right = "-100%";
 });
+
+
+// ==================cursor=========== 
+  const cursor = document.querySelector('.cursor');
+  const heroCard = document.querySelector('.hero-card');
+
+  heroCard.addEventListener('mousemove', (e) => {
+    cursor.style.top = `${e.clientY}px`;
+    cursor.style.left = `${e.clientX}px`;
+  });
+
+//   // Optional: Enlarge on hover
+//   const hoverTargets = document.querySelectorAll('a, button, .hover-target');
+
+//   hoverTargets.forEach(el => {
+//     el.addEventListener('mouseenter', () => cursor.classList.add('hovered'));
+//     el.addEventListener('mouseleave', () => cursor.classList.remove('hovered'));
+//   });
+
+
+// ==================date ================== 
+const dayName = document.querySelector("#dayName");
+
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const today = new Date().getDay();
+dayName.textContent = days[today];
+
+
