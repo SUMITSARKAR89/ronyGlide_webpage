@@ -52,3 +52,22 @@ const today = new Date().getDay();
 dayName.textContent = days[today];
 
 
+// ================================slider================ 
+const nextBtnNine = document.querySelector('.nine-next');
+const prevBtnNine = document.querySelector('.nine-prev');
+const sliderNine = document.querySelector('.nine-slider');
+
+nextBtnNine.addEventListener('click', () => {
+    let nineSlides = document.querySelectorAll('.nine-slide');
+    sliderNine.appendChild(nineSlides[0]);
+   sliderNine.style.animation = " fadeed 0.5s ease-in-out";
+});
+
+prevBtnNine.addEventListener('click', () => {
+    let nineSlides = document.querySelectorAll('.nine-slide');
+    sliderNine.prepend(nineSlides[nineSlides.length - 1]);
+    sliderNine.style.animation = " fadeed 0.5s ease-in";
+});
+
+
+
