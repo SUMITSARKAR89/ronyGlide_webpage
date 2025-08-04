@@ -35,6 +35,17 @@ closeMenu.addEventListener("click", () => {
     cursor.style.left = `${e.clientX}px`;
   });
 
+
+  const footerLast = document.querySelector('.footer-last');
+  const fCursor = document.querySelector('.f-cursor');
+
+  footerLast.addEventListener('mousemove', (e) => {
+    fCursor.style.top = `${e.clientY}px`;
+    fCursor.style.left = `${e.clientX}px`;
+
+
+  })
+
 //   // Optional: Enlarge on hover
 //   const hoverTargets = document.querySelectorAll('a, button, .hover-target');
 
@@ -60,13 +71,13 @@ const sliderNine = document.querySelector('.nine-slider');
 nextBtnNine.addEventListener('click', () => {
     let nineSlides = document.querySelectorAll('.nine-slide');
     sliderNine.appendChild(nineSlides[0]);
-   sliderNine.style.animation = " fadeed 0.5s ease-in-out";
+  
 });
 
 prevBtnNine.addEventListener('click', () => {
     let nineSlides = document.querySelectorAll('.nine-slide');
     sliderNine.prepend(nineSlides[nineSlides.length - 1]);
-    sliderNine.style.animation = " fadeed 0.5s ease-in";
+    
 });
 
 
