@@ -44,15 +44,8 @@ closeMenu.addEventListener("click", () => {
     fCursor.style.left = `${e.clientX}px`;
 
 
-  })
+  });
 
-//   // Optional: Enlarge on hover
-//   const hoverTargets = document.querySelectorAll('a, button, .hover-target');
-
-//   hoverTargets.forEach(el => {
-//     el.addEventListener('mouseenter', () => cursor.classList.add('hovered'));
-//     el.addEventListener('mouseleave', () => cursor.classList.remove('hovered'));
-//   });
 
 
 // ==================date ================== 
@@ -79,6 +72,38 @@ prevBtnNine.addEventListener('click', () => {
     sliderNine.prepend(nineSlides[nineSlides.length - 1]);
     
 });
+
+
+// // ==================== section panel and navigation btns ====================== 
+// const mainLink = document.querySelectorAll('.main-link');
+// const sectionPanel = document.querySelectorAll('.sectionPanel');
+
+
+// mainLink.forEach( (links, index) => {
+//   links.addEventListener("click", () => {
+//     mainLink.forEach (links => {
+//       links.classList.remove('active');
+//     });
+//     links.classList.remove('active');
+
+//     sectionPanel.forEach(content => {
+//       content.classList.remove('active');
+//     });
+//     sectionPanel[index].classList.add('active');
+//   });
+// });
+
+const loadBtn = document.querySelector('.write-more-btn');
+const wContainer = document.querySelector('.write-container2');
+
+loadBtn.addEventListener('click', () => {
+  wContainer.style.display = "flex";
+  wContainer.style.opacity = "1";
+  wContainer.style.margin = "5% 0";
+  loadBtn.style.display = "none";
+  
+});
+
 
 
 
