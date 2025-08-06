@@ -105,5 +105,30 @@ loadBtn.addEventListener('click', () => {
 });
 
 
+// =======================modal writting =========================== 
+
+const writeCard = document.querySelectorAll(".write-card");
+const wcClosed = document.querySelectorAll(".wc-colse");
+
+writeCard.forEach(wCard => {
+  wCard.addEventListener("click", () => {
+    const modalId = wCard.getAttribute("data-modal");
+    document.getElementById(modalId).style.display = "block";
+  });
+});
+
+wcClosed.forEach(btn => {
+  btn.addEventListener("click", () => {
+    btn.closest(".wc-modal").style.display = "none";
+  });
+});
+
+window.addEventListener("click", (e) => {
+  if(e.target.classList.contains("wc-modal")) {
+    e.target.style.display = "none";
+  }
+});
+
+
 
 
