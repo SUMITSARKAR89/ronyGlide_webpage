@@ -660,7 +660,7 @@
       <section class="sectionPanel">
         <div class="container" id="projectBody">
           <h2>Projects</h2>
-          <p class="font-16">
+          <p class="font-16 ">
             Here are a few projects that showcase my work and creativity. While
             there are many more, I’ve curated a selection to keep this portfolio
             concise and focused.
@@ -2034,7 +2034,7 @@
                 </div>
                 <i class="ri-arrow-right-s-line"></i>
               </a>
-              <a href="linear.html" class="project-card">
+              <a href="framer.html" class="project-card">
                 <img
                   src="https://framerusercontent.com/images/IFOTTSnKfED5nFL3jq7fk20KY.png?scale-down-to=512"
                   alt=""
@@ -2049,7 +2049,7 @@
                 </div>
                 <i class="ri-arrow-right-s-line"></i>
               </a>
-              <a href="circa.html" class="project-card">
+              <a href="framer.html" class="project-card">
                 <img
                   src="https://framerusercontent.com/images/00xlZ718Gbo0E53h1A8hdjwqr4.png?scale-down-to=512"
                   alt=""
@@ -2064,7 +2064,7 @@
                 </div>
                 <i class="ri-arrow-right-s-line"></i>
               </a>
-              <a href="reflect.html" class="project-card">
+              <a href="framer.html" class="project-card">
                 <img
                   src="https://framerusercontent.com/images/K8A6wtvDItvrnjpOomLbYHdXxwY.png?scale-down-to=512"
                   alt=""
@@ -2085,7 +2085,7 @@
             <h2 style="text-align: center">shop</h2>
 
             <div class="shop-container">
-              <div class="shop-card">
+              <div class="shop-card write-card" data-modal="wc7">
                 <div class="shop-img">
                   <img
                     src="https://framerusercontent.com/images/bxFfWTwE42fGq4HCFXlaVtbwfQ.png?scale-down-to=2048"
@@ -2347,6 +2347,32 @@
           e.target.style.display = "none";
         }
       });
+    </script>
+
+     <script>
+        ScrollReveal({
+        reset: true,
+        distance: "60px",
+        duration: 2500,
+        delay: 400
+        });
+
+        ScrollReveal().reveal('', {delay: 200, origin: 'top'});
+        ScrollReveal().reveal('', { delay: 200, origin: 'top', interval: 100 });
+
+        ScrollReveal().reveal('.hero-card h1, #work h2, #spotlight h2, #tool h2', { delay: 300, origin: 'left' });
+        ScrollReveal().reveal('.hero-card p, .slide-text', { delay: 400, origin: 'left' });
+        ScrollReveal().reveal('', { delay: 200, origin: 'left', interval: 100 });
+        ScrollReveal().reveal('.spotlight-title', { delay: 100, origin: 'left' });
+        
+        ScrollReveal().reveal('.hero-img, .nine-slider-container, .marquee-container, #side-project h2, #footer h2', {delay: 200, origin: 'bottom'});
+        ScrollReveal().reveal('#footer p, .footer-last', {delay: 300, origin: 'bottom'});
+         ScrollReveal().reveal('.spotlight-container, .side-pro-container, .foot-social', { delay: 400, origin: 'bottom', interval: 200 });
+
+        ScrollReveal().reveal('.valid-mar-container', { delay: 300, origin: 'right' });
+        ScrollReveal().reveal('.footer-form', { delay: 100, origin: 'right' });
+        ScrollReveal().reveal(' ', { delay: 400, origin: 'right', interval: 200 });
+
     </script>
   </body>
 </html>

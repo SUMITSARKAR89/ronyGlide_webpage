@@ -1,0 +1,285 @@
+.lightMood {
+  --primary-color: #f8fcfc;
+  --secondary-color: #ffffff;
+
+  --c1-color: #0c131b1a;
+  --sec-hover: #f3f3f3;
+  --green: #e4f9f3;
+  --green-txt: #3e9076;
+  --yellow: #f9f8e5;
+  --yellow-txt: #aa7a00;
+
+  --head-color: #0c131b;
+  --p-color-white: #070707;
+
+  --p-txt-color: #0c131b99;
+  --p-text-grey: #0b131b4d;
+
+  /* ----sun--- */
+  --control-sun: #000;
+  --grey-txt: #fff;
+
+  --control-moon: #f3f3f3;
+
+  /* gradient color  */
+  --linear-1: radial-gradient(
+    circle at top,
+    rgba(122, 118, 118, 0.986) 5%,
+    #000000 50%
+  );
+  --linear-2: linear-gradient(
+    to top,
+    rgb(247, 241, 241),
+    rgba(219, 214, 214, 0.329)
+  );
+  --linear-3: linear-gradient(to top, rgb(247, 241, 241), #1a1a1a);
+  --filter: #f8fcfc21;
+
+  --mr-lg: linear-gradient(to right, #ffffff81, transparent);
+  --ml-lg: linear-gradient(to left, #ffffff81, transparent);
+
+  /*others color*/
+  --scrollbar-color: #9097a2;
+  --scrollbar-thump: #3a3e45;
+  --scrollbar-hover: #272a2f;
+}
+
+:root {
+  /* background color  */
+  --primary-color: #000000;
+  --secondary-color: #0f0f0f;
+
+  --c1-color: #f0f0f01a;
+  --sec-hover: #1a1a1a;
+  --green: #081d16;
+  --green-txt: #3e9076;
+  --yellow: #1d1b08;
+  --yellow-txt: #aa7a00;
+
+  --head-color: #f0f0f0;
+  --p-color-white: #f3f3f3;
+  --p-txt-color: #f0f0f099;
+  --p-text-grey: #f0f0f04d;
+
+  /* --sun--  */
+  --control-sun: #0000006e;
+  --grey-txt: #f0f0f0c4;
+
+  --control-moon: #fff;
+
+  /* gradient color  */
+
+  --linear-1: radial-gradient(
+    circle at top,
+    rgba(122, 118, 118, 0.986) 5%,
+    #292727 50%
+  );
+  --linear-2: linear-gradient(to top, rgb(19, 18, 18), rgba(0, 0, 0, 0.384));
+  --linear-3: linear-gradient(to top, #0a0a0a, #1a1a1a);
+  --filter: #0000002d;
+
+  --mr-lg: linear-gradient(to right, #000, transparent);
+  --ml-lg: linear-gradient(to left, #000, transparent);
+
+  /*others color*/
+  --scrollbar-color: #263040;
+  --scrollbar-thump: #84b0f5;
+  --scrollbar-hover: #6f89b6;
+
+  /* transition  */
+  --transition-1: 0.2s ease;
+  --transition-2: 0.3s ease;
+  --transition-3: 0.5s ease;
+
+  /* fontsize  */
+  --font-h1: 2rem;
+  --font-h2: 1.5rem;
+  --font-h3: 1.375rem;
+
+  --font-18: 1.125rem;
+  --font-16: 1rem;
+  --font-14: 0.875rem;
+
+  
+}
+
+
+
+
+
+
+
+
+/* =======================responsive===============  */
+@media (max-width: 1280px) {
+  .foot-social::before,
+  .foot-social::after {
+    width: 100px;
+  }
+  :root {
+    --font-h1: 1.9rem;
+    --font-h2: 1.4rem;
+    --font-h3: 1.3rem;
+
+    --font-18: 1.1rem;
+    --font-16: 0.95rem;
+    --font-14: 0.85rem;
+  }
+}
+@media (max-width: 1168px) {
+  :root {
+    --font-h1: 1.8rem;
+    --font-h2: 1.35rem;
+    --font-h3: 1.25rem;
+
+    --font-18: 1.05rem;
+    --font-16: 0.9rem;
+    --font-14: 0.82rem;
+  }
+  .container {
+    padding: 0.5% 6%;
+    margin: 0 1%;
+  }
+  .head {
+    left: -100%;
+    transition: var(--transition-3);
+  }
+  #control {
+    right: 15%;
+    transition: var(--transition-3);
+  }
+  #control i {
+    padding: 5px;
+  }
+  #menu {
+    right: 11%;
+  }
+  main {
+    margin-top: 5%;
+  }
+  .foot-social::before,
+  .foot-social::after {
+    width: 70px;
+  }
+  .footer-form {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .shop-container,
+  .write-container,
+  .book-container,
+  .song-container {
+    grid-template-columns: 1fr;
+  }
+  .shop-card .shop-img {
+    height: 200px;
+  }
+  .wc-modal .wc-modal-content {
+    width: 80%;
+  }
+}
+@media (max-width: 998px) {
+  :root {
+    --font-h1: 1.7rem;
+    --font-h2: 1.25rem;
+    --font-h3: 1.15rem;
+
+    --font-18: 1rem;
+    --font-16: 0.875rem;
+    --font-14: 0.8rem;
+  }
+  .container {
+    padding: 0.5% 5%;
+    margin: 0 1%;
+  }
+  section {
+    margin: 8% 10% 5%;
+  }
+  .foot-social::before,
+  .foot-social::after {
+    width: 100px;
+  }
+  .sc-img-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  :root {
+    --font-h1: 1.5rem;
+    --font-h2: 1.1rem;
+    --font-h3: 1rem;
+
+    --font-18: 0.95rem;
+    --font-16: 0.85rem;
+    --font-14: 0.75rem;
+  }
+  section {
+    margin: 8% 5% 5%;
+  }
+  .container {
+    padding: 0.5% 2%;
+    margin: 0 1%;
+  }
+  #control {
+    right: 18%;
+  }
+  .otherTools-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  #aboutBody .status {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition-2);
+    margin: 10% 0;
+  }
+  .status img {
+    margin-top: 0;
+  }
+  .journey-info .info-card {
+    grid-template-columns: 1fr;
+  }
+  .sec-container .sec-container-card,
+  .framer-img-card,
+  .sc-img-card {
+    grid-template-columns: 1fr;
+  }
+  .framer-img-card img {
+    height: 100%;
+  }
+}
+@media (max-width: 600px) {
+  :root {
+    --font-h1: 1.3rem;
+    --font-h2: 1rem;
+    --font-h3: 0.95rem;
+
+    --font-18: 0.875rem;
+    --font-16: 0.8rem;
+    --font-14: 0.7rem;
+  }
+  section {
+    margin: 8% 3% 5%;
+  }
+  .container {
+    padding: 0.5% 1%;
+    margin: 0 1%;
+  }
+  .tool-container {
+    grid-template-columns: 1fr;
+  }
+  .foot-social::before,
+  .foot-social::after {
+    width: 50px;
+  }
+  .project-container .project-card {
+    flex-direction: column;
+  }
+  .project-card img {
+    width: 100%;
+    height: 200px;
+  }
+  .about-card-container {
+    grid-template-columns: 1fr;
+  }
+}
